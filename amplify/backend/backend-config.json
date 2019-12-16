@@ -21,5 +21,12 @@
 				}
 			]
 		}
+	},
+	"auth": {
+		"amplifytestfddd3140": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
 	}
 }

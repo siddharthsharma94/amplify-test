@@ -41,7 +41,7 @@ app.get("/items", function(req, res) {
   res.json({ success: "get call succeed!", url: req.url });
 });
 
-app.get("/posts", async function(req, res) {
+app.get("/items/posts", async function(req, res) {
   try {
     let response = await axios.get(
       "https://jsonplaceholder.typicode.com/posts"
@@ -51,11 +51,6 @@ app.get("/posts", async function(req, res) {
     console.log(e);
     res.json(e);
   }
-});
-
-app.get("/items/*", function(req, res) {
-  // Add your code here
-  res.json({ success: "get call succeed!", url: req.url });
 });
 
 /****************************
